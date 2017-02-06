@@ -15,18 +15,110 @@ body {
 div header {
   background-color: white;
   width: 100%;
-  height: 80px;
+  height: 49px;
   display: inline-block;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+table {
+  display: block;
+  margin-right: 9px;
+  margin-top: -22px;
+  position: relative;
+  top: 0px;
+  right: 6px;
+  outline: 0;
+  border: none;
+}
+
+table:hover td {
+  background-color: black;
+}
+
+td {
+  width: 11px;
+  height: 0.01px;
+  background-color: #d2d2d2;
+  display: block;
 }
 
 li img {
-  width: 76px;
-  height: 37px;
-  padding-right: 180px;
+  width: 78px;
+  height: 33px;
+  padding-right: 88px;
+  margin-top: -9px;
+  margin-left: -9px;
+}
+
+input {
+  padding-left: 10px;
+  position: relative;
+  top: -12px;
+  width: 643px;
+  height: 26px;
+  transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  border-radius: 2px;
+  box-shadow: 0 2px 3px 2px rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  outline: 0;
+  border: 0;
+}
+
+
+input:hover {
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 2px 4px rgba(0,0,0,0.16), 1px 1px 1px 2px rgba(0,0,0,0.08);
+}
+
+input:focus {
+  border: 0.5px solid #e4e4e4;
+}
+
+.search {
+  background-image: url("images/glass.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 69px;
+  padding-bottom: 1.4px;
+  padding-top: 24px;
+  background-color: #fafafa;
+  position: relative;
+  top: -4.5px;
+  left: -73px;
+  border-radius: 2px;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px 3px 3px rgba(0,0,0,0.08);
+}
+
+.header-buttons {
+  padding: 5px;
+  display: inline-block;
+  border: 0;
+  color: #545454;
+  border-radius: 2px;
+  border: 1px solid #e4e4e4;
+}
+
+#upload {
+  background-color: #fafafa;
+  position: relative;
+  top: -14px;
+  left: 135px;
+}
+
+#sign-in {
+  background-color: #fafafa;
+  position: relative;
+  top: -14px;
+  left: 170px;
 }
 
 li {
@@ -44,12 +136,14 @@ div section {
 }
 
 div aside {
-  background-color: #f1f1f1;
+  background-color: white;
   float: right;
-  height: 100px;
+  height: 400px;
   padding: 30px;
   margin-right: 40px;
   clear: both;
+  padding-top: 200px;
+  margin-top: 200px;
 }
 
 div footer {
