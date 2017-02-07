@@ -2,6 +2,7 @@
 * {
   color: black;
   font-family: "Roboto", arial, sans-serif;
+  font-size: 12.5px;
 }
 
 header, div article, article, div section, section, div aside, aside, div footer, footer {
@@ -12,8 +13,12 @@ body {
     background-color: #f1f1f1;
 }
 
+a {
+  text-decoration: none;
+}
+
 div header {
-  background-color: white;
+  background-color: #fff;
   width: 100%;
   height: 49px;
   display: inline-block;
@@ -22,6 +27,7 @@ div header {
   left: 0;
   right: 0;
   border-bottom: 1px solid #eaeaea;
+  z-index: 1;
 }
 
 table {
@@ -35,6 +41,10 @@ table {
   border: none;
 }
 
+ul {
+  display: inline-block;
+}
+
 table:hover td {
   background-color: black;
 }
@@ -46,7 +56,7 @@ td {
   display: block;
 }
 
-li img {
+#tube {
   width: 78px;
   height: 33px;
   padding-right: 88px;
@@ -56,8 +66,8 @@ li img {
 
 input {
   padding-left: 10px;
-  position: relative;
-  top: -12px;
+  position: absolute;
+  top: 10px;
   width: 643px;
   height: 26px;
   transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -70,7 +80,7 @@ input {
 
 input:hover {
   border: 1px solid #eaeaea;
-  box-shadow: 0 2px 2px 4px rgba(0,0,0,0.16), 1px 1px 1px 2px rgba(0,0,0,0.08);
+  box-shadow: 1px 2px 2px 4px rgba(0,0,0,0.16), 1px 1px 1px 2px rgba(0,0,0,0.08);
 }
 
 input:focus {
@@ -83,14 +93,17 @@ input:focus {
   background-position: center;
   background-size: cover;
   width: 69px;
+  height: 100%;
   padding-bottom: 1.4px;
   padding-top: 24px;
   background-color: #fafafa;
   position: relative;
-  top: -4.5px;
-  left: -73px;
+  top: -2px;
+  left: 583px;
   border-radius: 2px;
   border: 0;
+  border: 0.5px solid #eaeaea;
+  z-index: 1;
 }
 
 button:hover {
@@ -100,25 +113,28 @@ button:hover {
 
 .header-buttons {
   padding: 5px;
-  display: inline-block;
   border: 0;
   color: #545454;
   border-radius: 2px;
   border: 1px solid #e4e4e4;
 }
 
+.header-buttons:hover {
+  color: black;
+}
+
 #upload {
   background-color: #fafafa;
   position: relative;
-  top: -14px;
-  left: 135px;
+  top: -10px;
+  left: 760px;
 }
 
 #sign-in {
   background-color: #fafafa;
   position: relative;
-  top: -14px;
-  left: 170px;
+  top: -10px;
+  left: 780px;
 }
 
 li {
@@ -128,24 +144,158 @@ li {
 }
 
 div article {
-  background-color: teal;
+  background-color: transparent;
+  display: block;
+  padding: 50px;
+  width: 640px;
+  position: relative;
+  margin-left: 49px;
+  top: 2px;
+  border: 0;
+  outline: none;
 }
 
 div section {
-  background-color: lightblue;
+  background-color: #fff;
+  padding: 15px;
+  padding-top: 0;
+  padding-left: 15px;
+  margin-top: 7px;
+  height: 120px;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #;
+}
+
+section p:first-of-type {
+    font-size: 19.5px;
+    float: left;
+    margin-bottom: 12px;
+}
+
+section p:last-of-type{
+  display: inline-block;
+  float: right;
+  font-size: 24px;
+}
+
+section img {
+  height: 48px;
+  width: 48px;
+  float: left;
+  margin-right: 10px;
+}
+
+section a {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+section a:hover {
+  color: #0066cc;
 }
 
 div aside {
-  background-color: white;
+  background-color: #fff;
   float: right;
-  height: 400px;
-  padding: 30px;
-  margin-right: 40px;
+  height: 500px;
+  width: 415px;
+  margin-right: 80px;
+  padding-right: 20px;
   clear: both;
-  padding-top: 200px;
-  margin-top: 200px;
+  margin-top: 52px;
+}
+
+aside li strong {
+  position: relative;
+  top: -3px;
+  right: 25px;
+}
+
+aside ol {
+  position: relative;
+  top: -10px;
+}
+
+#auto {
+  width: 128px;
+  height: 28px;
+  position: relative;
+  top: 5px;
+  left: 192px;
+}
+
+#subscribe {
+  background-color: #e62e00;
+  color: #fff;
+  border-radius: 2px;
+  border: 0;
+  border: 1px solid #eaeaea;
+  width: 80px;
+  padding: 2px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+#subscribe:hover {
+  background-color: #b32400
+}
+
+#number {
+  background-color: transparent;
+  color: #545454;
+  border: 0;
+  padding: 2px;
+  border: 1px solid #eaeaea;
+  cursor: default;
+  margin-left: -2px;
+}
+
+.thumbs {
+  height: 82px;
+  width: 140px;
+  float: left;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 8px;
+}
+
+.titles {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+
+.titles:hover {
+  color: #0066cc;
+}
+
+.author, .views {
+  margin: 0;
+  float: left;
+  color: #767676;
+}
+
+aside ul {
+  display: block;
+}
+
+aside div {
+  margin-top: -10px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 10px;
+  border: 0;
+  outline: none;
 }
 
 div footer {
   background-color: violet;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  outline: none;
 }
