@@ -33,7 +33,7 @@ div header {
 table {
   display: block;
   margin-right: 9px;
-  margin-top: -22px;
+  margin-top: -24px;
   position: relative;
   top: 0px;
   right: 6px;
@@ -60,7 +60,7 @@ td {
   width: 72px;
   height: 34px;
   padding-right: 82px;
-  margin-top: -9px;
+  margin-top: -5px;
   margin-left: 3px;
 }
 
@@ -501,7 +501,7 @@ aside ol + div {
   position: relative;
 }
 
-.user {
+li .user {
   display: inline-block;
   margin: 0;
   color: #0066cc;
@@ -509,8 +509,9 @@ aside ol + div {
   float: left;
 }
 
-h6:hover {
-    text-decoration: underline
+a .user:hover {
+    text-decoration: underline;
+    cursor: pointer;
   }
 
 .foot-buttons:hover {
