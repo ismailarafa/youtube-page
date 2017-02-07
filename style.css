@@ -57,11 +57,11 @@ td {
 }
 
 #tube {
-  width: 78px;
-  height: 33px;
-  padding-right: 88px;
+  width: 72px;
+  height: 34px;
+  padding-right: 82px;
   margin-top: -9px;
-  margin-left: -9px;
+  margin-left: 3px;
 }
 
 input {
@@ -127,7 +127,7 @@ button:hover {
   background-color: #fafafa;
   position: relative;
   top: -10px;
-  left: 760px;
+  left: 750px;
 }
 
 #sign-in {
@@ -176,7 +176,8 @@ section p:first-of-type {
 section p:last-of-type{
   display: inline-block;
   float: right;
-  font-size: 24px;
+  font-size: 20px;
+  margin-top: 4px;
 }
 
 section img {
@@ -198,7 +199,7 @@ section a:hover {
 div aside {
   background-color: #fff;
   float: right;
-  height: 500px;
+  height: 1000px;
   width: 415px;
   margin-right: 80px;
   padding-right: 20px;
@@ -251,18 +252,27 @@ aside ol {
   margin-left: -2px;
 }
 
+.thumb {
+  height: 82px;
+  width: 140px;
+  float: left;
+  margin-left: 14px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
 .thumbs {
   height: 82px;
   width: 140px;
   float: left;
+  margin-left: -25px;
+  margin-right: 10px;
+  padding-bottom: 15px;
   display: inline-block;
-  margin-left: 10px;
-  margin-right: 8px;
 }
 
 .titles {
   margin: 0;
-  margin-bottom: 2px;
   font-size: 13px;
 }
 
@@ -276,26 +286,37 @@ aside ol {
   color: #767676;
 }
 
-aside ul {
-  display: block;
-}
-
 aside div {
-  margin-top: -10px;
-  padding-bottom: 45px;
+  margin-top: -11px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #e2e2e2;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   border: 0;
   outline: none;
+}
+
+aside ol + div {
+  border-bottom: 1px solid #e2e2e2;
+  margin-left: 18px;
+}
+
+#first {
+  position: relative;
+  top: 0;
+  right: 18px;
+}
+
+.details {
+  display: inline;
+  padding-right: 120px;
 }
 
 div footer {
   background-color: violet;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  outline: none;
   bottom: 0;
   left: 0;
   right: 0;
-  border: 0;
-  outline: none;
 }
