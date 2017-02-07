@@ -64,7 +64,15 @@ td {
   margin-left: 3px;
 }
 
-input {
+#tube2 {
+  width: 72px;
+  height: 34px;
+  padding-left: 30px;
+  position: relative;
+  top: 12px;
+}
+
+header input:first-of-type {
   padding-left: 10px;
   position: absolute;
   top: 10px;
@@ -79,7 +87,6 @@ input {
 
 
 input:hover {
-  border: 1px solid #eaeaea;
   box-shadow: 1px 2px 2px 4px rgba(0,0,0,0.16), 1px 1px 1px 2px rgba(0,0,0,0.08);
 }
 
@@ -164,7 +171,7 @@ div section {
   height: 120px;
   border: 0;
   outline: none;
-  border-bottom: 1px solid #;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 section p:first-of-type {
@@ -199,7 +206,7 @@ section a:hover {
 div aside {
   background-color: #fff;
   float: right;
-  height: 1000px;
+  height: 1150px;
   width: 415px;
   margin-right: 80px;
   padding-right: 20px;
@@ -306,17 +313,260 @@ aside ol + div {
   right: 18px;
 }
 
+#bottom {
+  width: 642px;
+  margin-top: -8px;
+  margin-left: -1px;
+  outline: none;
+  border: 0;
+}
+
+#desc {
+  background-color: #fff;
+  margin-top: 8px;
+  height: 130px;
+  padding-left: 10px;
+  padding-top: 1px;
+}
+
+#desc p:last-of-type {
+  text-align: center;
+  margin-top: -10px;
+  color: #767676;
+}
+
+#desc p:last-of-type:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#desc img {
+  width: 620px;
+  position: relative;
+  right: 0px;
+  z-index: 1;
+}
+
+.box {
+  height: 300px;
+  background-color: #fff;
+  width: 625px;
+  margin-left: 99px;
+  margin-top: -35px;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+
+.box h5 {
+  margin-top: 8px;
+}
+
+.box h5 strong {
+    color: #767676;
+}
+
+.box img {
+  margin-left: 8px;
+  margin-bottom: 0;
+}
+
+.box img:last-of-type {
+  width: 620px;
+  position: relative;
+  top: -60px;
+  right: 14px;
+}
+
+.box form input {
+  float: right;
+  position: relative;
+  top: -66px;
+  right: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  line-height: 80px;
+  width: 500px;
+  border-radius: 7.5%;
+  border: 0;
+  outline: none;
+  border: 2px solid #e4e4e4;
+}
+
+#top {
+  margin: 0;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #e2e2e2;
+  position: relative;
+  top: -50px;
+  left: 20px;
+}
+
+#sidebottom {
+  width: 435px;
+  text-align: center;
+  position: static;
+  border-top: 1px solid #e2e2e2;
+  background-color: #fff;
+  padding-top: 1px;
+  margin-top: -10px;
+  margin-bottom: 300px;
+}
+
+#sidebottom p {
+  color: #767676;
+}
+
+#sidebottom p:hover {
+  color: black;
+  cursor: pointer;
+}
+
 .details {
   display: inline;
   padding-right: 120px;
 }
 
-div footer {
-  background-color: violet;
+#white {
   width: 100%;
-  position: fixed;
-  outline: none;
-  bottom: 0;
-  left: 0;
+  padding-bottom: 100px;
+}
+
+.foot-buttons {
+  border: 0;
+  padding: 5px;
+  margin-left: 40px;
+  border-radius: 2px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 1px 1px 4px #eaeaea;
+  color: #545454;
+  display: inline-block;
+  position: relative;
+}
+
+.comments {
+  height: 240px;
+  background-color: #fff;
+  width: 640px;
+  position: relative;
+  left: 99px;
+}
+
+#last-line {
+  width: 620px;
+  position: relative;
+  top: -80px;
+  left: 10px;
+}
+
+#show {
+  text-align: center;
+  position: relative;
+  top: -90px;
+  color: #767676;
+}
+
+#show:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.comments ul {
+  margin: 0;
+  position: relative;
+  top: -70px;
+  right: 80px;
+}
+
+.commthumb {
+  width: 64px;
+  height: 64px;
+  float: left;
+  display: block;
+  padding-left: 80px;
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.body {
+  display: block;
+  float: left;
+  margin-top: 15px;
+  position: relative;
+  right: 62px;
+}
+
+.body2 {
+  position: relative;
+}
+
+.user {
+  display: inline-block;
+  margin: 0;
+  color: #0066cc;
+  cursor: pointer;
+  float: left;
+}
+.user:hover {
+    text-decoration: underline
+  }
+
+.foot-buttons:hover {
+  color: black;
+}
+
+footer ol {
+  display: inline-block;
+  margin-top: -10px;
+}
+
+footer ol li {
+  padding-left: 12px;
+  padding-right: 6px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+footer ol li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0066cc
+}
+
+footer ul li {
+  padding-left: 20px;
+  padding-right: 12px;
+  font-weight: bold;
+  color: #767676;
+  font-size: 11px;
+}
+
+footer ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0066cc
+}
+
+footer ul {
+  display: block;
+  margin: 0;
+}
+
+#line {
+  width: 95%;
+  margin-left: 25px;
+}
+
+div footer {
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 1600px;
   right: 0;
+  left: 0;
+  height: 140px;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
